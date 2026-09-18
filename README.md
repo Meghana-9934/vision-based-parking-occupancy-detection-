@@ -50,6 +50,12 @@ A classical machine learning approach using Scikit-learn and Scikit-image is als
 
 **Currently in Progress**
 
+### 📦 Model File
+
+The trained CNN model file (`cnn_model.h5`) is not included in this repository due to its large file size.
+
+The project code and supporting files are provided for reference and development.
+
 ## 🌱 Future Enhancements
 
 - Integration with IoT devices
