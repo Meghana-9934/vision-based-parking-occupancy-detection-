@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large datasets
+X.npy
+y.npy
+
+# Videos
+*.mp4
+*.avi
+*.mov
+
+# Generated files
+predicted_parking_images/
+videoframes/
+flagged/
+uploads/
