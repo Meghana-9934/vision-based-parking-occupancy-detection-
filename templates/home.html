@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block title %}Home - ParkDetect{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-4">Smart Parking Detection System</h1>
+        <p class="lead mb-5">Revolutionary AI technology to detect parking space availability in real-time</p>
+        <a href="{{ url_for('prediction') }}" class="btn btn-light btn-lg">Try Our System</a>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center section-title">Our Features</h2>
+        <div class="row mt-5">
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="card-title">AI-Powered Detection</h3>
+                        <p class="card-text">Our advanced convolutional neural network analyzes video feeds to accurately determine parking space availability with high precision.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="card-title">Real-Time Analysis</h3>
+                        <p class="card-text">Process video feeds in real-time to provide instant updates on parking space status, helping drivers find available spots quickly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="card-title">Detailed Analytics</h3>
+                        <p class="card-text">Get comprehensive statistics and insights about parking patterns, peak hours, and space utilization rates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title">How It Works</h2>
+        <div class="row mt-5">
+            <div class="col-md-3 mb-4 text-center">
+                <div class="step-icon bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                    <span class="fs-4 fw-bold">1</span>
+                </div>
+                <h4>Upload Video</h4>
+                <p>Upload a video of your parking area to our system.</p>
+            </div>
+            <div class="col-md-3 mb-4 text-center">
+                <div class="step-icon bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                    <span class="fs-4 fw-bold">2</span>
+                </div>
+                <h4>AI Processing</h4>
+                <p>Our AI model analyzes the video frame by frame.</p>
+            </div>
+            <div class="col-md-3 mb-4 text-center">
+                <div class="step-icon bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                    <span class="fs-4 fw-bold">3</span>
+                </div>
+                <h4>Detection</h4>
+                <p>The system identifies parking spaces and their status.</p>
+            </div>
+            <div class="col-md-3 mb-4 text-center">
+                <div class="step-icon bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                    <span class="fs-4 fw-bold">4</span>
+                </div>
+                <h4>Results</h4>
+                <p>Receive detailed analysis and statistics about parking usage.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center section-title">Our Impact</h2>
+        <div class="row mt-5">
+            <div class="col-md-3 mb-4 text-center">
+                <h2 class="display-4 fw-bold text-primary">95%</h2>
+                <p class="lead">Detection Accuracy</p>
+            </div>
+            <div class="col-md-3 mb-4 text-center">
+                <h2 class="display-4 fw-bold text-primary">30%</h2>
+                <p class="lead">Reduced Search Time</p>
+            </div>
+            <div class="col-md-3 mb-4 text-center">
+                <h2 class="display-4 fw-bold text-primary">50+</h2>
+                <p class="lead">Cities Implemented</p>
+            </div>
+            <div class="col-md-3 mb-4 text-center">
+                <h2 class="display-4 fw-bold text-primary">24/7</h2>
+                <p class="lead">System Availability</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">Ready to Transform Your Parking Management?</h2>
+        <p class="lead mb-4">Join the smart parking revolution and improve efficiency for drivers and operators alike.</p>
+        <a href="{{ url_for('prediction') }}" class="btn btn-light btn-lg me-3">Try Now</a>
+        <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg">Contact Us</a>
+    </div>
+</section>
+{% endblock %}

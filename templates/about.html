@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block title %}About - ParkDetect{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-4">About ParkDetect</h1>
+        <p class="lead mb-5">Revolutionizing parking management with cutting-edge AI technology</p>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <img src="https://picsum.photos/seed/technology/600/400.jpg" alt="Parking Detection Technology" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-lg-6 mb-4">
+                <h2 class="section-title text-start">Our Story</h2>
+                <p>ParkDetect was born from a simple observation: finding parking in urban areas is a frustrating and time-consuming experience. Our team of AI researchers and urban planners came together to develop a solution that would make parking more efficient for everyone.</p>
+                <p>Since our inception in 2020, we've grown from a small startup to a leading provider of smart parking solutions, with implementations in over 50 cities worldwide. Our technology has helped millions of drivers find parking faster and enabled parking operators to optimize their spaces.</p>
+                <p>Today, we continue to innovate and improve our system, incorporating the latest advances in computer vision and machine learning to provide the most accurate and reliable parking detection solution on the market.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technology Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title">Our Technology</h2>
+        <div class="row mt-5">
+            <div class="col-md-6 mb-4">
+                <h3><i class="fas fa-microchip text-primary me-2"></i>Advanced Neural Networks</h3>
+                <p>Our system uses state-of-the-art convolutional neural networks (CNNs) specifically trained for parking space detection. These models can accurately identify parking spaces and determine their occupancy status even in challenging lighting and weather conditions.</p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h3><i class="fas fa-video text-primary me-2"></i>Real-Time Video Processing</h3>
+                <p>ParkDetect processes video feeds in real-time, analyzing frames every few seconds to provide up-to-date information about parking availability. Our optimized algorithms ensure minimal latency while maintaining high accuracy.</p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h3><i class="fas fa-cloud text-primary me-2"></i>Cloud-Based Infrastructure</h3>
+                <p>Our cloud-based architecture ensures scalability and reliability, allowing the system to handle multiple parking facilities simultaneously. This also means easier maintenance and updates without disrupting service.</p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h3><i class="fas fa-shield-alt text-primary me-2"></i>Privacy-First Design</h3>
+                <p>We prioritize privacy in our system design. ParkDetect only analyzes parking spaces and does not identify or store personal information about vehicles or individuals. All data is anonymized and processed securely.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center section-title">Our Team</h2>
+        <div class="row mt-5">
+            <div class="col-md-4 mb-4 text-center">
+                <img src="https://picsum.photos/seed/person1/300/300.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+                <h4>Dr. Sarah Johnson</h4>
+                <p class="text-muted">CEO & Co-Founder</p>
+                <p>PhD in Computer Vision from MIT. Former AI researcher at Google with 15+ years of experience in machine learning.</p>
+                <div class="social-icons justify-content-center">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+                <img src="https://picsum.photos/seed/person2/300/300.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+                <h4>Michael Chen</h4>
+                <p class="text-muted">CTO & Co-Founder</p>
+                <p>Former senior engineer at Tesla's Autopilot team. Expert in real-time systems and computer vision with 12+ years of industry experience.</p>
+                <div class="social-icons justify-content-center">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+                <img src="https://picsum.photos/seed/person3/300/300.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+                <h4>Emily Rodriguez</h4>
+                <p class="text-muted">Head of Operations</p>
+                <p>Urban planning expert with a focus on smart city solutions. Previously led parking optimization projects for major metropolitan areas.</p>
+                <div class="social-icons justify-content-center">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission & Vision Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h2 class="section-title text-start">Our Mission</h2>
+                <p>To revolutionize urban parking by providing accurate, real-time information that reduces congestion, saves time for drivers, and maximizes efficiency for parking operators through innovative AI technology.</p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h2 class="section-title text-start">Our Vision</h2>
+                <p>A future where finding parking is effortless, cities are less congested, and smart technology seamlessly integrates with urban infrastructure to create more sustainable and livable communities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - ParkDetect{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-4">Contact Us</h1>
+        <p class="lead mb-5">Get in touch with our team to learn more about ParkDetect</p>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <h2 class="section-title text-start">Send Us a Message</h2>
+                <form action="{{ url_for('send_contact') }}" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <h2 class="section-title text-start">Contact Information</h2>
+                <div class="mb-4">
+                    <h5><i class="fas fa-map-marker-alt text-primary me-2"></i>Address</h5>
+                    <p>123 Tech Street, Suite 456<br>San Francisco, CA 94105<br>United States</p>
+                </div>
+                <div class="mb-4">
+                    <h5><i class="fas fa-phone text-primary me-2"></i>Phone</h5>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="mb-4">
+                    <h5><i class="fas fa-envelope text-primary me-2"></i>Email</h5>
+                    <p>info@parkdetect.com</p>
+                </div>
+                <div class="mb-4">
+                    <h5><i class="fas fa-clock text-primary me-2"></i>Business Hours</h5>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM PST<br>Saturday - Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title">Frequently Asked Questions</h2>
+        <div class="row mt-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                How accurate is ParkDetect's parking space detection?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                ParkDetect achieves over 95% accuracy in parking space detection under normal conditions. Our system has been extensively tested in various lighting and weather conditions to ensure reliable performance. Accuracy may vary slightly in extreme weather or unusual lighting situations.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                What types of cameras does ParkDetect support?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                ParkDetect is compatible with most standard IP cameras and surveillance systems. Our system can work with various resolutions and frame rates, though we recommend cameras with at least 720p resolution for optimal performance. We support both fixed and PTZ cameras.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                Is my data secure with ParkDetect?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we take data security very seriously. ParkDetect uses industry-standard encryption for data transmission and storage. Our system is designed with privacy in mind and only analyzes parking spaces without storing or transmitting personally identifiable information about vehicles or individuals.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                Can ParkDetect integrate with existing parking management systems?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, ParkDetect offers API integration capabilities that allow it to work with most existing parking management systems. Our technical team can work with your organization to ensure seamless integration with your current infrastructure.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                What is the implementation timeline for ParkDetect?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Implementation timelines vary depending on the size and complexity of your parking facility. For small to medium-sized lots, implementation can typically be completed within 2-4 weeks. Larger facilities or custom integrations may require 6-8 weeks. Our team will provide a detailed timeline after assessing your specific requirements.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
