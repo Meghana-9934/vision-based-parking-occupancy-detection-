@@ -1,4 +1,4 @@
-# Vision-Based Parking Occupancy Detection and Protection Using Convolutional Neural Networks (CNN)
+# Vision-Based Parking Occupancy Detection and Protection Using Convolutional Neural Networks (CNNs)
 
 ## 📌 Project Overview
 
@@ -24,7 +24,7 @@ The system helps users quickly identify available parking spaces, reduces unnece
 3. Image preprocessing techniques such as cropping, grayscale conversion, resizing, and normalization are applied.
 4. The processed images are given to the CNN model.
 5. The CNN classifies each parking slot as empty or occupied.
-6. The system continuously displays parking occupancy information through a user-friendly interface.
+6. The system displays parking occupancy information through a user-friendly interface.
 
 ## 🧠 Machine Learning Approach
 
