@@ -1,0 +1,7 @@
+Flask
+opencv-python
+numpy
+tensorflow
+scikit-image
+scikit-learn
+Werkzeug
